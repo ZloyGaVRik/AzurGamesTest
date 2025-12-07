@@ -1,8 +1,10 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
-using DG.Tweening;
+using UnityEngine.UI;
+using UnityEngine.UIElements;
 
 public class HeroesScreenMediator : MonoBehaviour
 {
@@ -12,9 +14,12 @@ public class HeroesScreenMediator : MonoBehaviour
     private CanvasGroup _canvasSkillPanel;
     private CanvasGroup _canvasStatPanel;
 
+    private UnityEngine.Events.UnityAction[] skillButtonActions;
+
     private RectTransform _rectSkill;
     private RectTransform _rectStat;
     private RectTransform _rect;
+    private RectTransform _slider;
 
     private DG.Tweening.Sequence _seq;
 
@@ -25,6 +30,7 @@ public class HeroesScreenMediator : MonoBehaviour
         _rectSkill = _view.SkillPanel.GetComponent<RectTransform>();
         _rectStat = _view.StatPanel.GetComponent<RectTransform>();
         _rect = _view.HeroesImage.GetComponent<RectTransform>();
+        _slider = _view.Slider.GetComponent<RectTransform>();
 
         _canvasScreen = _view.HeroesImage.GetComponent<CanvasGroup>();
         _canvasSkillPanel = _view.SkillPanel.GetComponent<CanvasGroup>();
@@ -34,6 +40,24 @@ public class HeroesScreenMediator : MonoBehaviour
         _view.LeftButton.onClick.AddListener(OnLeftButtonClicked);
         _view.RightButton.onClick.AddListener(OnRightButtonClicked);
 
+        UnityEngine.UI.Button[] buttons = { _view.SkillButton1, _view.SkillButton2, _view.SkillButton3};
+
+        skillButtonActions = new UnityEngine.Events.UnityAction[buttons.Length];
+
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            RectTransform btnRect = buttons[i].GetComponent<RectTransform>();
+            skillButtonActions[i] = () => OnSkillButtonClicked(btnRect);
+            buttons[i].onClick.AddListener(skillButtonActions[i]);
+        }
+    }
+
+    private void OnSkillButtonClicked(RectTransform btnRect)
+    {
+        if (_seq != null && _seq.IsActive())
+            _seq.Kill();
+        _seq = DOTween.Sequence();
+        _seq.Append(_slider.DOAnchorPos(new Vector2(btnRect.anchoredPosition.x-10f, _slider.anchoredPosition.y), 0.5f).SetEase(Ease.OutBack, 1.0f));
     }
 
     private void OnBackButtonClicked()
@@ -103,6 +127,15 @@ public class HeroesScreenMediator : MonoBehaviour
         _view.BackButton.onClick.RemoveListener(OnBackButtonClicked);
         _view.LeftButton.onClick.RemoveListener(OnLeftButtonClicked);
         _view.RightButton.onClick.RemoveListener(OnRightButtonClicked);
+        _view.SkillButton1.onClick.RemoveListener(OnRightButtonClicked);
+
+        UnityEngine.UI.Button[] buttons = { _view.SkillButton1, _view.SkillButton2, _view.SkillButton3 };
+
+        for (int i = 0; i < buttons.Length; i++)
+        {
+            buttons[i].onClick.RemoveListener(skillButtonActions[i]);
+        }
+
     }
 
 }
