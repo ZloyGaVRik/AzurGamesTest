@@ -11,6 +11,7 @@ public class HeroesScreenMediator : MonoBehaviour
     private View _view;
 
     private CanvasGroup _canvasScreen;
+    private CanvasGroup _canvasScreenImage;
     private CanvasGroup _canvasSkillPanel;
     private CanvasGroup _canvasStatPanel;
 
@@ -32,7 +33,8 @@ public class HeroesScreenMediator : MonoBehaviour
         _rect = _view.HeroesImage.GetComponent<RectTransform>();
         _slider = _view.Slider.GetComponent<RectTransform>();
 
-        _canvasScreen = _view.HeroesImage.GetComponent<CanvasGroup>();
+        _canvasScreenImage = _view.HeroesImage.GetComponent<CanvasGroup>();
+        _canvasScreen = _view.HeroesScreen.GetComponent<CanvasGroup>();
         _canvasSkillPanel = _view.SkillPanel.GetComponent<CanvasGroup>();
         _canvasStatPanel = _view.StatPanel.GetComponent<CanvasGroup>();
 
@@ -62,7 +64,6 @@ public class HeroesScreenMediator : MonoBehaviour
 
     private void OnBackButtonClicked()
     {
-        _canvasScreen = _view.HeroesScreen.GetComponent<CanvasGroup>();
 
         if (_seq != null && _seq.IsActive())
             _seq.Kill();
@@ -82,7 +83,7 @@ public class HeroesScreenMediator : MonoBehaviour
         _seq = DOTween.Sequence();
 
         _seq.Append(_rect.DOAnchorPos(new Vector2(-300f, _rect.anchoredPosition.y), 0.5f))
-            .Join(_canvasScreen.DOFade(0f, 0.5f))
+            .Join(_canvasScreenImage.DOFade(0f, 0.5f))
             .Join(_rectSkill.DOAnchorPos(new Vector2(-500f, _rectSkill.anchoredPosition.y), 1f).SetEase(Ease.OutBack, 1.0f))
             .Join(_rectStat.DOAnchorPos(new Vector2(500f, _rectStat.anchoredPosition.y), 1f).SetEase(Ease.OutBack, 1.0f))
             .Join(_canvasSkillPanel.DOFade(0f, 0.15f))
@@ -90,7 +91,7 @@ public class HeroesScreenMediator : MonoBehaviour
 
         _seq.Append(_rect.DOAnchorPos(new Vector2(100f, _rect.anchoredPosition.y), 0.5f))
             .Append(_rect.DOAnchorPos(new Vector2(0f, _rect.anchoredPosition.y), 0.5f))
-            .Join(_canvasScreen.DOFade(1f, 0.5f))
+            .Join(_canvasScreenImage.DOFade(1f, 0.5f))
             .Join(_rectSkill.DOAnchorPos(new Vector2(0f, _rectSkill.anchoredPosition.y), 1f).SetEase(Ease.OutBack, 1.0f))
             .Join(_rectStat.DOAnchorPos(new Vector2(0f, _rectStat.anchoredPosition.y), 1f).SetEase(Ease.OutBack, 1.0f))
             .Join(_canvasSkillPanel.DOFade(1f, 0.15f))
@@ -106,7 +107,7 @@ public class HeroesScreenMediator : MonoBehaviour
         _seq = DOTween.Sequence();
 
         _seq.Append(_rect.DOAnchorPos(new Vector2(300f, _rect.anchoredPosition.y), 0.5f))
-            .Join(_canvasScreen.DOFade(0f, 0.5f))
+            .Join(_canvasScreenImage.DOFade(0f, 0.5f))
             .Join(_rectSkill.DOAnchorPos(new Vector2(-500f, _rectSkill.anchoredPosition.y), 1f).SetEase(Ease.OutBack, 1.0f))
             .Join(_rectStat.DOAnchorPos(new Vector2(500f, _rectStat.anchoredPosition.y), 1f).SetEase(Ease.OutBack, 1.0f))
             .Join(_canvasSkillPanel.DOFade(0f, 0.15f))
@@ -114,7 +115,7 @@ public class HeroesScreenMediator : MonoBehaviour
 
         _seq.Append(_rect.DOAnchorPos(new Vector2(100f, _rect.anchoredPosition.y), 0.5f))
             .Append(_rect.DOAnchorPos(new Vector2(0f, _rect.anchoredPosition.y), 0.5f))
-            .Join(_canvasScreen.DOFade(1f, 0.5f))
+            .Join(_canvasScreenImage.DOFade(1f, 0.5f))
             .Join(_rectSkill.DOAnchorPos(new Vector2(0f, _rectSkill.anchoredPosition.y), 1f).SetEase(Ease.OutBack, 1.0f))
             .Join(_rectStat.DOAnchorPos(new Vector2(0f, _rectStat.anchoredPosition.y), 1f).SetEase(Ease.OutBack, 1.0f))
             .Join(_canvasSkillPanel.DOFade(1f, 0.15f))
