@@ -1,0 +1,64 @@
+# =========================
+# Unity generated folders
+# =========================
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# =========================
+# MemoryCaptures (Unity 2018+)
+# =========================
+[Mm]emoryCaptures/
+
+# =========================
+# Asset meta data
+# =========================
+!/[Aa]ssets/**/*.meta
+
+# =========================
+# IDE / Editor files
+# =========================
+.vs/
+.idea/
+.vscode/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# =========================
+# Unity generated meta files
+# =========================
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# =========================
+# Crash reports
+# =========================
+sysinfo.txt
+
+# =========================
+# Builds
+# =========================
+*.apk
+*.aab
+*.unitypackage
+*.app
+*.exe
+
+# =========================
+# OS generated files
+# =========================
+.DS_Store
+Thumbs.db
