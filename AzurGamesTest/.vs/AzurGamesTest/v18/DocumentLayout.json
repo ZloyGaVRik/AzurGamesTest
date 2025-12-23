@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|d:\\fork\\azurgamestest\\azurgamestest\\assets\\sripts\\scrollbarmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|solutionrelative:assets\\sripts\\scrollbarmove.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|d:\\fork\\azurgamestest\\azurgamestest\\assets\\scripts\\heroesscreenmediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\heroesscreenmediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|D:\\Fork\\AzurGamesTest\\AzurGamesTest\\assets\\scripts\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ScrollbarMove.cs",
-              "DocumentMoniker": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Sripts\\ScrollbarMove.cs",
-              "RelativeDocumentMoniker": "Assets\\Sripts\\ScrollbarMove.cs",
-              "ToolTip": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Sripts\\ScrollbarMove.cs",
-              "RelativeToolTip": "Assets\\Sripts\\ScrollbarMove.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAJAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "View.cs",
+              "DocumentMoniker": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Scripts\\View.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\View.cs",
+              "ToolTip": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Scripts\\View.cs",
+              "RelativeToolTip": "Assets\\Scripts\\View.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-20T15:14:38.512Z",
+              "WhenOpened": "2025-12-23T13:46:43.389Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HeroesScreenMediator.cs",
+              "DocumentMoniker": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Scripts\\HeroesScreenMediator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HeroesScreenMediator.cs",
+              "ToolTip": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Scripts\\HeroesScreenMediator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HeroesScreenMediator.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFIAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:35:07.793Z",
               "EditorCaption": ""
             }
           ]

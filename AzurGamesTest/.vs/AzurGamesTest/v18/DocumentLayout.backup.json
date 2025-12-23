@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|d:\\fork\\azurgamestest\\azurgamestest\\assets\\sripts\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|solutionrelative:assets\\sripts\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|d:\\fork\\azurgamestest\\azurgamestest\\assets\\scripts\\heroesscreenmediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\heroesscreenmediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Fork\\AzurGamesTest\\AzurGamesTest\\assets\\heroesscreenmediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\heroesscreenmediator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|D:\\Fork\\AzurGamesTest\\AzurGamesTest\\assets\\scripts\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66C137DB-C35A-F144-A92A-3F18C6388C81}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\view.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -23,26 +23,28 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HeroesScreenMediator.cs",
-              "DocumentMoniker": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\HeroesScreenMediator.cs",
-              "RelativeDocumentMoniker": "Assets\\HeroesScreenMediator.cs",
-              "ToolTip": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\HeroesScreenMediator.cs",
-              "RelativeToolTip": "Assets\\HeroesScreenMediator.cs",
-              "ViewState": "AgIAABYAAAAAAAAAAAAgwC0AAAAiAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACySURBVDhPYxgFEHDjxY3/Xqvc/wtO5P1vvdji/40X1/9DpcBg3rm5cD4yGw6sF5v/bz7UAJZoAtIgw8ASUAAyGMpEYYMAI4gACb7P/wxmg4DuXM3/l5OvM4JsKz5cABVFBa6y7gyrgtZA9KCbig7wuYAJSpMNsBoA8gKIBnkBZiOIRmaHrQtBuMQTGGjNhxvBAk1AGhQTYAkoQHY2MhsOQNFotcgcbIPnSjfSo3FEAwYGAA95Yu3hOJS9AAAAAElFTkSuQmCC",
-              "WhenOpened": "2025-12-05T16:24:08.687Z"
+              "Title": "View.cs",
+              "DocumentMoniker": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Scripts\\View.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\View.cs",
+              "ToolTip": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Scripts\\View.cs",
+              "RelativeToolTip": "Assets\\Scripts\\View.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-23T13:46:43.389Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "View.cs",
-              "DocumentMoniker": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Sripts\\View.cs",
-              "RelativeDocumentMoniker": "Assets\\Sripts\\View.cs",
-              "ToolTip": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Sripts\\View.cs",
-              "RelativeToolTip": "Assets\\Sripts\\View.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAQwB0AAAAvAAAAAAAAAA==",
+              "Title": "HeroesScreenMediator.cs",
+              "DocumentMoniker": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Scripts\\HeroesScreenMediator.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\HeroesScreenMediator.cs",
+              "ToolTip": "D:\\Fork\\AzurGamesTest\\AzurGamesTest\\Assets\\Scripts\\HeroesScreenMediator.cs",
+              "RelativeToolTip": "Assets\\Scripts\\HeroesScreenMediator.cs",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAcwFIAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T16:24:08.689Z",
+              "WhenOpened": "2025-12-23T13:35:07.793Z",
               "EditorCaption": ""
             }
           ]
